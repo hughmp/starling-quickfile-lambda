@@ -1,4 +1,4 @@
-const sync = require('.')
+const sync = require('..')
 
 const handler = (event, context, callback) => {
   sync()
@@ -8,7 +8,5 @@ const handler = (event, context, callback) => {
     }))
     .catch(error => console.error(error) || callback(error))
 }
-
-handler()
 
 module.exports = { handler }
