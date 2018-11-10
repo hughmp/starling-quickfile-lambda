@@ -6,7 +6,7 @@ const failure = (res, body) => ({
   body: JSON.parse(body)
 })
 
-const request = async (url, options) =>
+const request = async options =>
   new Promise((resolve, reject) => {
     let data
     let payload
@@ -21,7 +21,7 @@ const request = async (url, options) =>
       }
     }
 
-    const req = https.request(url, opt, res => {
+    const req = https.request(opt, res => {
       res.on('data', (chunk) => {
         data === undefined
           ? data = chunk

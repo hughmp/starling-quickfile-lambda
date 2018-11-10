@@ -1,10 +1,10 @@
 module.exports = {
   quickfile: {
-    API: 'https://api.quickfile.co.uk',
+    API: 'api.quickfile.co.uk',
     CREATE_TRANSACTION: '/1_2/Bank/CreateTransaction'
   },
   starling: {
-    API: 'https://api.starlingbank.com/api',
-    TRANSACTIONS: '/v1/transactions'
+    API: 'api.starlingbank.com',
+    TRANSACTIONS: '/api/v1/transactions'
   }
 }
