@@ -1,4 +1,4 @@
-const sync = require('../')
+const sync = require('.')
 
 const handler = (event, context, callback) => {
   sync()
