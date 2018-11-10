@@ -3,4 +3,4 @@
   command = "echo 'default context'"
 
   # Directory with the lambda functions to deploy to AWS.
-  functions = "netlify/"
+  functions = "src/netlify/"
