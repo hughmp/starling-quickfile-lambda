@@ -1,7 +1,8 @@
 const sync = require('..')
 
 const handler = (event, context, callback) => {
-  sync()
+  const { queryStringParameters: { number } } = event
+  sync(number)
     .then(msg => callback(null, {
       statusCode: 200,
       body: msg
